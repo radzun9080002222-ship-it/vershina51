@@ -51,7 +51,7 @@ export default function Hero() {
           </dl>
         </div>
         <div className="relative">
-          <img src="/images/hero-vershina51.webp" alt={"Современный интерьер с видом на гостиницу «Арктика» и площадь Пять Углов в Мурманске — сгенерированное изображение"} className="aspect-[4/5] w-full rounded-3xl object-cover object-right" fetchPriority="high" />
+          <img src="/images/hero-murmansk-clean-apartment.webp" alt="Чистая уютная гостиная после уборки: диван, деревянный стол и городской вид Мурманска за окном — иллюстрация" className="aspect-[4/5] w-full rounded-3xl object-cover object-center" width={1120} height={1400} fetchPriority="high" />
           <div className="absolute -bottom-5 -left-5 hidden rounded-2xl bg-white p-5 shadow-card md:block">
             <div className="text-[11px] font-semibold uppercase tracking-widest2 text-emerald">{area === null ? 'приёмка по стандарту' : 'убрано в этом месяце'}</div>
             <div className="mt-1 text-2xl font-bold text-graphite">
