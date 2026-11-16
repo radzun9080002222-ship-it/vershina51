@@ -1,0 +1,26 @@
+{
+  "city": "Мурманск",
+  "cityForms": {
+    "name": "Мурманск",
+    "prepositional": "Мурманске",
+    "genitive": "Мурманска"
+  },
+  "region": "Мурманская область",
+  "domain": "vershina51.ru",
+  "pricingGroup": "ordinary",
+  "rates": [
+    150,
+    230,
+    370,
+    450,
+    280,
+    410,
+    500
+  ],
+  "minimumVisit": 6000,
+  "metrikaId": 114267198,
+  "webmasterVerification": "14ca28e2778ba98c",
+  "heroPath": "images/hero-vershina51.webp",
+  "ogPath": "images/og-vershina51.jpg",
+  "heroLandmark": "гостиницу «Арктика» и площадь Пять Углов"
+}

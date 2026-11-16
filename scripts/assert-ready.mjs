@@ -1,0 +1,10 @@
+import assert from 'node:assert/strict';
+import {readFileSync} from 'node:fs';
+const c=JSON.parse(readFileSync('site.config.json','utf8'));
+assert(c.metrikaId>0,'Own non-zero counter required');
+assert(/^[a-z0-9.-]+$/.test(c.domain)&&!c.domain.endsWith('.test'),'Production domain required');
+assert.equal(readFileSync('public/CNAME','utf8').trim(),c.domain);
+const m=readFileSync('public/metrika.js','utf8');
+assert.equal(Number(m.match(/var id = (\d+)/)?.[1]),c.metrikaId);
+assert(c.webmasterVerification&&readFileSync('index.html','utf8').includes(c.webmasterVerification),'Own verification required');
+console.log('Readiness passed: city/domain/own analytics/verification');
